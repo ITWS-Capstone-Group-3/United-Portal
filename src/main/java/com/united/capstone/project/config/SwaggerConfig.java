@@ -27,11 +27,8 @@ public class SwaggerConfig {
     }
 
     private ApiInfo apiInfo() {
-        return new ApiInfoBuilder().title("Course API")
-                .description("xadmin Course API Documentation Generateed Using SWAGGER2 for our Course Rest API")
-                .termsOfServiceUrl("https://www.youtube.com/channel/UC-85Tmx8lhNZQmBNbxZiqkw")
-                .license("Xadmin Rest API License")
-                .licenseUrl("https://www.youtube.com/channel/UC-85Tmx8lhNZQmBNbxZiqkw")
+        return new ApiInfoBuilder().title("United Airlines Common Case Platform REST API")
+                .description("REST API Documentation generated using SWAGGER2")
                 .version("1.0")
                 .build();
     }
