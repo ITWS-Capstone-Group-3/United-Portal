@@ -1,4 +1,4 @@
-package com.united.capstone.UnitedCapstoneProject.config;
+package com.united.capstone.project.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

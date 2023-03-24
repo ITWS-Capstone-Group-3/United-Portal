@@ -10,4 +10,4 @@ Local Setup Instructions:
 4) Right click and add as Maven project
 5) Setup project SDK as required
 6) Run UnitedCapstoneProjectApplication.java
-7) Open localhost:8080/swagger.ui.html to view the swagger page and all the available APIS
+7) Open http://localhost:8080/swagger-ui.html to view the swagger page and all the available APIS

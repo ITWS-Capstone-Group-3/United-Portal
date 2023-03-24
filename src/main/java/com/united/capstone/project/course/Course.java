@@ -1,4 +1,4 @@
-package com.united.capstone.UnitedCapstoneProject.course;
+package com.united.capstone.project.course;
 
 import io.swagger.annotations.ApiModelProperty;
 
