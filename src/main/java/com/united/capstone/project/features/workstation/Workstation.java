@@ -20,7 +20,7 @@ public class Workstation {
 
     private String workstationDetails;
 
-    private WorkstationTypeEnum workstationTypeEnum;
+    private WorkstationTypeEnum workstationType;
 
     @OneToMany(targetEntity = Checklist.class, mappedBy = "workstation", fetch = FetchType.EAGER)
     private List<Checklist> checklists;

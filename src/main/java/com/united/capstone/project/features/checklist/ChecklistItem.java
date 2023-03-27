@@ -24,5 +24,6 @@ public class ChecklistItem {
     private byte[] image;
 
     @ManyToOne(targetEntity = Checklist.class, fetch = FetchType.EAGER)
+    @JoinColumn(name="checklistId", referencedColumnName="checklistId")
     private Checklist checklist;
 }

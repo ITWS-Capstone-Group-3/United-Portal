@@ -11,3 +11,4 @@ Local Setup Instructions:
 5) Setup project SDK as required
 6) Run UnitedCapstoneProjectApplication.java
 7) Open http://localhost:8080/swagger-ui.html to view the swagger page and all the available APIS
+8) Open http://localhost:8080/h2-console to access H2 console
