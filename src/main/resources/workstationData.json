@@ -1,0 +1,17 @@
+[
+  {
+    "workstationId": 1,
+    "workstationDetails": "Workstation 1",
+    "workstationType": "GATE"
+  },
+  {
+    "workstationId": 2,
+    "workstationDetails": "Workstation 2",
+    "workstationType": "GATE"
+  },
+  {
+    "workstationId": 3,
+    "workstationDetails": "Workstation 3",
+    "workstationType": "LOBBY"
+  }
+]

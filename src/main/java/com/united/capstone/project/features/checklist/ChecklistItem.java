@@ -18,6 +18,8 @@ public class ChecklistItem {
 
     private String itemDetails;
 
+    private String references;
+
     private ChecklistItemStatusEnum itemStatus;
 
     private String errorDescription;
