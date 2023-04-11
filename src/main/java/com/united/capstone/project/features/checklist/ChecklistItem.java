@@ -18,7 +18,7 @@ public class ChecklistItem {
 
     private String itemDetails;
 
-    private String references;
+    private String itemReferences;
 
     private ChecklistItemStatusEnum itemStatus;
 

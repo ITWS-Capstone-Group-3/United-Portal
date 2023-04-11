@@ -5,27 +5,27 @@
       {
         "itemDetails": "Validate that the current UA Logos are being used",
         "itemStatus": "INCOMPLETE",
-        "references": ""
+        "itemReferences": ""
       },
       {
         "itemDetails": "Printed Test Boarding Pass and Test Bag Tag",
         "itemStatus": "INCOMPLETE",
-        "references": "Page #4"
+        "itemReferences": "Page #4"
       },
       {
         "itemDetails": "Station Manager showing apps already running; should be InfoConnect",
         "itemStatus": "INCOMPLETE",
-        "references": "Page #5"
+        "itemReferences": "Page #5"
       },
       {
         "itemDetails": "Instructions to Show Device Status and Reset Printers",
         "itemStatus": "INCOMPLETE",
-        "references": "Page #5 and 6"
+        "itemReferences": "Page #5 and 6"
       },
       {
         "itemDetails": "Verify Unimatic access",
         "itemStatus": "INCOMPLETE",
-        "references": "Page #7"
+        "itemReferences": "Page #7"
       }
     ],
     "workstation": {
@@ -38,12 +38,12 @@
       {
         "itemDetails": "After launching AERO you may see new dialog boxes giving you the loading status",
         "itemStatus": "INCOMPLETE",
-        "references": "Page #8 and 9"
+        "itemReferences": "Page #8 and 9"
       },
       {
         "itemDetails": "After launching Aero, click on the status bar(upper right), verify using Version 2.3.0.0",
         "itemStatus": "INCOMPLETE",
-        "references": "Page #10 and 11"
+        "itemReferences": "Page #10 and 11"
       }
     ],
     "workstation": {
@@ -56,12 +56,12 @@
       {
         "itemDetails": "Launch Jet, Log in using UA credentials, land on application home page",
         "itemStatus": "INCOMPLETE",
-        "references": "Page #25 - 27"
+        "itemReferences": "Page #25 - 27"
       },
       {
         "itemDetails": "Verify PRS status",
         "itemStatus": "INCOMPLETE",
-        "references": "Page #28 and 29"
+        "itemReferences": "Page #28 and 29"
       }
     ],
     "workstation": {
