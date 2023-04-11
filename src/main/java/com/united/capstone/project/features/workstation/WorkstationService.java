@@ -23,6 +23,11 @@ public class WorkstationService {
         return "saved workstation with id: " + workstation.getWorkstationId();
     }
 
+    public String saveListOfWorkstations(List<Workstation> workstations) {
+        repository.saveAll(workstations);
+        return "saved all " + workstations.size() + " workstations";
+    }
+
     public List<Workstation> deleteWorkstationById(int workstationId) {
         repository.deleteById(workstationId);
         return repository.findAll();

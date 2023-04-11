@@ -31,6 +31,12 @@ public class ChecklistController {
         return service.saveChecklist(checklist);
     }
 
+    @PostMapping("/save/bulk")
+    @ApiOperation(value = "it is saving a list of new checklists")
+    public String saveListOfChecklists(@RequestBody List<Checklist> checklists) {
+        return service.saveListOfChecklists(checklists);
+    }
+
     @DeleteMapping("/delete/{checklistId}")
     @ApiOperation(value = "it will delete checklist with id")
     public List<Checklist> deleteChecklistById(@PathVariable int checklistId) {

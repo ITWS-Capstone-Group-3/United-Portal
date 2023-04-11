@@ -23,6 +23,11 @@ public class ChecklistService {
         return "saved checklist with id: " + checklist.getChecklistId();
     }
 
+    public String saveListOfChecklists(List<Checklist> checklists) {
+        repository.saveAll(checklists);
+        return "saved all " + checklists.size() + " checklists";
+    }
+
     public List<Checklist> deleteChecklistById(int checklistId) {
         repository.deleteById(checklistId);
         return repository.findAll();

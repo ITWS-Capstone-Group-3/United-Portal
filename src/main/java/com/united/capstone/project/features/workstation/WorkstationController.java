@@ -31,6 +31,12 @@ public class WorkstationController {
         return service.saveWorkstation(workstation);
     }
 
+    @PostMapping("/save/bulk")
+    @ApiOperation(value = "it is saving list of new workstation")
+    public String saveListOfWorkstations(@RequestBody List<Workstation> workstations) {
+        return service.saveListOfWorkstations(workstations);
+    }
+
     @DeleteMapping("/delete/{workstationId}")
     @ApiOperation(value = "it will delete workstation with id")
     public List<Workstation> deleteWorkstationById(@PathVariable int workstationId) {
