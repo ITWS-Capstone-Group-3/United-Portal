@@ -21,7 +21,7 @@ public class SwaggerConfig {
                 .groupName("unitedCapstone")
                 .apiInfo(apiInfo())
                 .select()
-                .paths(regex("/checklist.*"))
+                .paths(regex("/api.*"))
                 .build();
 
     }

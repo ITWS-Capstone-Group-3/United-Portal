@@ -20,7 +20,7 @@ public class WorkstationService {
 
     public String saveWorkstation(Workstation workstation) {
         repository.save(workstation);
-        return "saved workstation with id" + workstation.getWorkstationId();
+        return "saved workstation with id: " + workstation.getWorkstationId();
     }
 
     public List<Workstation> deleteWorkstationById(int workstationId) {

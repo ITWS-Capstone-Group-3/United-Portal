@@ -1,6 +1,7 @@
 package com.united.capstone.project.features.checklist;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.united.capstone.project.features.workstation.Workstation;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -18,13 +19,15 @@ public class Checklist {
     @ApiModelProperty(value = "This is auto generated id")
     private int checklistId;
 
+    @Column(unique = true)
     private String checkListDetails;
 
-    @OneToMany(targetEntity = ChecklistItem.class, mappedBy = "checklist", fetch = FetchType.EAGER)
+    @JsonManagedReference
+    @OneToMany(targetEntity = ChecklistItem.class, mappedBy = "checklist", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<ChecklistItem> checklistItems;
 
-    @JsonIgnore
+    @JsonBackReference
     @ManyToOne(targetEntity = Workstation.class, fetch = FetchType.EAGER)
-    @JoinColumn(name="workstationId", referencedColumnName="workstationId")
+    @JoinColumn(name = "workstationId", referencedColumnName = "workstationId")
     private Workstation workstation;
 }

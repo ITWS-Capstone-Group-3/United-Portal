@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/checklist")
+@RequestMapping("/api/checklist")
 public class ChecklistController {
 
     @Autowired

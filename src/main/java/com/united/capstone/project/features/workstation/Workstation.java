@@ -1,5 +1,6 @@
 package com.united.capstone.project.features.workstation;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.united.capstone.project.features.checklist.Checklist;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -22,6 +23,7 @@ public class Workstation {
 
     private WorkstationTypeEnum workstationType;
 
+    @JsonManagedReference
     @OneToMany(targetEntity = Checklist.class, mappedBy = "workstation", fetch = FetchType.EAGER)
     private List<Checklist> checklists;
 

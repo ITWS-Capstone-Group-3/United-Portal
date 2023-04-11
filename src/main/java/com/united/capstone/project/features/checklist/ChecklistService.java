@@ -20,7 +20,7 @@ public class ChecklistService {
 
     public String saveChecklist(Checklist checklist) {
         repository.save(checklist);
-        return "saved checklist with id" + checklist.getChecklistId();
+        return "saved checklist with id: " + checklist.getChecklistId();
     }
 
     public List<Checklist> deleteChecklistById(int checklistId) {

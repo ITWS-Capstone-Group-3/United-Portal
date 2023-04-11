@@ -1,5 +1,6 @@
 package com.united.capstone.project.features.checklist;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
@@ -13,7 +14,7 @@ public class ChecklistItem {
     @Id
     @GeneratedValue
     @ApiModelProperty(value = "This is auto generated id")
-    private int itemId;
+    private int checklistItemId;
 
     private String itemDetails;
 
@@ -23,7 +24,8 @@ public class ChecklistItem {
 
     private byte[] image;
 
+    @JsonBackReference
     @ManyToOne(targetEntity = Checklist.class, fetch = FetchType.EAGER)
-    @JoinColumn(name="checklistId", referencedColumnName="checklistId")
+    @JoinColumn(name = "checklistId", referencedColumnName = "checklistId")
     private Checklist checklist;
 }
